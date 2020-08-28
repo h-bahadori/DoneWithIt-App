@@ -1,12 +1,17 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import ViewImageScreen from './app/screens/ViewImageScreen';
-import WelcomeScreen from './app/screens/WelcomeScreen';
-import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
-import MessagesScreen from './app/screens/MessagesScreen';
+import Screen from './app/components/Screen';
 
 export default function App() {
   return (
-    <MessagesScreen />
+    <Screen>
+      <Icon
+        name="email"
+        size="50"
+        backgrounfColor="red"
+        iconColor="white"
+      />
+
+    </Screen>
   );
 }
